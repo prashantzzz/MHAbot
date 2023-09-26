@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MHABot</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="icon.png">
+    
+</head>
+
+<body>
+    <!-- making the navigation bar !-->
+    <!-- <div class="navbar">
+        <a href="#" onclick="showPage('home')">Home</a>
+        <a href="#" onclick="showPage('bots')">Bots</a>
+        <a href="#" onclick="showPage('features')">Features</a>
+        <a href="#" onclick="showPage('about')">About Us</a>
+    </div> -->
+
+    <!--code for navbar-->
+    <div class="heading1">
+            <h1>MHAbot</h1>
+            <div class="right-buttons">
+                <a href="#home" >Home</a>
+                <a href="#bots" >Bots</a>
+                <a href="#features" >Features</a>
+                <a href="#about" >About Us</a>
+            </div>
+        </div>
+    </div>
+    
+    <!--code for making the carousel-->
+    <div id="home" class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img  src="https://imgur.com/BvCAkCk.png" >
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="https://imgur.com/IR147SX.png" >
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="https://imgur.com/62v2kNU.png" >
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="https://i.imgur.com/3drVT9V.jpeg" >
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+
+
+
+    <!-- Home page -->
+
+    <div id="bots" class="heading">
+        <h1">Bots</h1>
+    </div>
+    <div id="content-container">
+        <div id="left-content">
+            <img src="https://i.imgur.com/sjCl9Z6.png"
+                alt="Chatbot Image" />
+        </div>
+        <div id="chatbot-container">
+            <iframe title="MHABot" src="https://www.chatbase.co/chatbot-iframe/aBuJz1AB3WDY7X_28EYXg"
+                frameborder="0"></iframe>
+            <div class="overlay" id="overlay">
+            </div>
+        </div>
+    </div>
+
+    <!-- features page -->
+    <div id ="features" class="heading">
+        <h1">Features</h1>
+    </div>
+    <div class="feature-container">
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    Secure Data<br><img src="https://imgur.com/Zi54CE6.png" alt="Image Description" width="100px"
+                        height="100px" style="margin-top: 10px;">
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    Understand Natural Language
+                    <img src="https://imgur.com/IQmbyhp.png" alt="Image Description" width="100px" height="100px"
+                        style="margin-top: 10px;">
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    Secure Authentication<br><img src="https://imgur.com/gDlkuac.png" alt="Image Description" width="100px"
+                        height="100px" style="margin-top: 10px;">
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    FAQ'S<br><img src="https://imgur.com/xiWBdnc.png" alt="Image Description" width="100px" height="100px"
+                        style="margin-top: 10px;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+
+
+    </script>
+</body>
+
+</html>
