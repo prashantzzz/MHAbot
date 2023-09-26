@@ -16,11 +16,11 @@ The Data Protection Rights Under General Data Protection Regulation
 (GDPR) 
 
 # Technology stack
-● HTML, CSS, JS for the web interface.
-● Using frameworks for JS and styling the website.
-● Chatbase API integration with gpt-3.5 for training.
-● Web speech API for voice powered chatbot support.
-● Dynamic Linking for user authentication.
+● HTML, CSS, JS for the web interface.<br>
+● Using frameworks for JS and styling the website.<br>
+● Chatbase API integration with gpt-3.5 for training.<br>
+● Web speech API for voice powered chatbot support.<br>
+● Dynamic Linking for user authentication.<br>
 
 # Features
 ⮚ User Authentication: Allow government employees to log in securely using their credentials to 
